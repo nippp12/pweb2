@@ -6,8 +6,8 @@ class mahasiswa{
     var $nama;
     var $alamat;
     //method untuk menampilkan nama
-    function tampil_nim(){
-        //menampilkan nama
+    protected function tampil_nim(){
+        echo "220202011 <br>";
     }
     function __construct(){
         echo "Saya Mahasiswa Teknik Informatika <br>";
@@ -23,6 +23,7 @@ class mahasiswa{
     }
     function __destruct(){
         echo "</br>Politeknik Negeri Cilacap";
+        $this->tampil_nim();
     }
 }
 
